@@ -1,0 +1,15 @@
+
+<h2>Trabalhando com Listas </h2>
+<p>Passos: Criei um Type (Tipo de lista Celular.ts ( Classe com os dados necessarios do objeto).
+No componente eu preencho com os dados necessarios!</p>
+<ul class="lista-produtos">
+    <li *ngFor="let celular of _celulares">
+        <strong> {{ celular.nome }}</strong>
+        <p>{{ celular.descricao }}</p>
+        <span [ngClass]="celular.esgotado ? 'esgotado' : '' " > {{ celular.esgotado ? "Esgotado" : "Disponível" }} </span >
+    </li>
+</ul>
+
+
+
+
